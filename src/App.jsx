@@ -5,10 +5,9 @@ import Events from './Pages/Events'
 import Footer from './Pages/Footer'
 
 function App() {
-
   return (
     <>
-      <Hero />
+      <Hero bgImage="/assets/bg1.jpg" />
       <About />
       <Events />
       <Footer />
