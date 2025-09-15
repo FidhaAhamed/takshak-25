@@ -104,7 +104,7 @@ const LayeredCards = () => {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform -scale-x-100"
-        style={{ backgroundImage: "url('/assets/bg7.jpg')" }}
+        style={{ backgroundImage: "url('/assets/bg71.jpg')" }}
       ></div>
 
       {/* Dark overlay for readability (optional) */}

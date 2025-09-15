@@ -27,22 +27,22 @@ function App() {
           <Hero bgImage="/assets/bg7.jpg" />
           <About />
           <Events />
-          <Gallery />
+        {/*   <Gallery />*/}
           <Footer />
         </div>
       } />
-      <Route path="/gallery" element={
+    {/*  <Route path="/gallery" element={
         <div className="min-h-screen flex flex-col">
           <GalleryPage />
         </div>
-      } />
+      } />*/}
       {/* Add a catch-all route that redirects to home */}
       <Route path="*" element={
         <div className="min-h-screen flex flex-col">
-          <Hero bgImage="/assets/bg7.jpg" />
+          <Hero bgImage="/assets/bg1.jpg" />
           <About />
           <Events />
-          <Gallery />
+        {/*  <Gallery /> */}
           <Footer />
         </div>
       } />

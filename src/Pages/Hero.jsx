@@ -11,7 +11,7 @@ export default function Hero({ bgImage }) {
         <div
           className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat transition-transform duration-[2000ms]"
           style={{
-            backgroundImage: `url(${bgImage})`,
+            backgroundImage: "/assets/bg1.jpg",
             transform: zoomed ? "scale(1.1)" : "scale(1)",
           }}
         />
