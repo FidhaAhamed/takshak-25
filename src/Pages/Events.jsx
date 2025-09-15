@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const cardsData = [
-  { id: 1, imageUrl: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/1" },
-  { id: 2, imageUrl: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/2" },
-  { id: 3, imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/3" },
-  { id: 4, imageUrl: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/4" },
-  { id: 5, imageUrl: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/5" },
-  { id: 6, imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/6" },
-  { id: 7, imageUrl: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/7" },
-  { id: 8, imageUrl: "https://images.unsplash.com/photo-1533055640609-d0fdf6ac3f93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/8" },
-  { id: 9, imageUrl: "https://images.unsplash.com/photo-1517817748493-49ec54a3241d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/9" },
-  { id: 10, imageUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", registrationLink: "https://example.com/register/10" },
+  { id: 1, imageUrl: "/assets/events/e1.jpg", registrationLink: "https://makemypass.com/event/bgmi-tournament" },
+  { id: 2, imageUrl: "/assets/events/e2.jpg", registrationLink: "ttps://forms.gle/EPQTKZwr9MkGc2eLA" },
+  { id: 3, imageUrl: "/assets/events/e3.jpg", registrationLink: "https://makemypass.com/event/innovista" },
+  { id: 4, imageUrl: "/assets/events/e4.jpg", registrationLink: "https://makemypass.com/event/ragworkshop" },
+  { id: 5, imageUrl: "/assets/events/e5.jpg", registrationLink: "https://makemypass.com/event/animate-the-basics" },
+  { id: 6, imageUrl: "/assets/events/e6.jpg", registrationLink: "https://makemypass.com/event/macekart-iedc-mace" },
+  { id: 7, imageUrl: "/assets/events/e7.jpg", registrationLink: "https://makemypass.com/event/visionedge-paper-presentation" },
+  { id: 8, imageUrl: "/assets/events/e8.jpg", registrationLink: "https://makemypass.com/event/game-development-workshop" },
+  { id: 9, imageUrl: "/assets/events/e9.jpg", registrationLink: "https://makemypass.com/event/autocad-1" },
+  { id: 10, imageUrl: "/assets/events/e10.jpg", registrationLink: "https://makemypass.com/event/brain2gain" },
 ];
 
 const LayeredCards = () => {
@@ -52,7 +53,7 @@ const LayeredCards = () => {
     if (isMobile) {
       return {
         radius: 150,
-        cardWidth: 'w-32',
+        cardWidth: 'w-40',
         cardHeight: 'h-40',
         perspective: '800px',
         scale: 0.7 + Math.random() * 0.2,
@@ -61,7 +62,7 @@ const LayeredCards = () => {
     } else if (isTablet) {
       return {
         radius: 250,
-        cardWidth: 'w-48',
+        cardWidth: 'w-60',
         cardHeight: 'h-60',
         perspective: '1200px',
         scale: 0.8 + Math.random() * 0.2,
@@ -70,7 +71,7 @@ const LayeredCards = () => {
     } else {
       return {
         radius: 400,
-        cardWidth: 'w-64',
+        cardWidth: 'w-80',
         cardHeight: 'h-80',
         perspective: '1600px',
         scale: 0.9 + Math.random() * 0.3,
@@ -100,7 +101,7 @@ const LayeredCards = () => {
 
   return (
     <div
-      className="relative w-full h-screen overflow-hidden bg-black"
+      className="relative w-full min-h-[130vh] overflow-hidden bg-black"
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform -scale-x-100"
@@ -109,13 +110,13 @@ const LayeredCards = () => {
 
       {/* Dark overlay for readability (optional) */}
       <div className="absolute inset-0 bg-black/40"></div>
-      <h1 className="absolute top-6 left-1/2 -translate-x-1/2 text-4xl md:text-5xl font-giaza font-extrabold uppercase tracking-wider text-white drop-shadow-lg z-20">
+      <h1 className="absolute top-6 left-1/2 -translate-x-1/2 text-4xl md:text-6xl my-16 font-giaza font-extrabold uppercase tracking-wider text-white drop-shadow-lg z-20">
         Events
       </h1>
 
       {/* Main 3D container - Properly centered */}
       <div 
-        className="my-16 absolute inset-0 flex items-center justify-center"
+        className="my-48 absolute inset-0 flex items-center justify-center"
         style={{
           perspective: responsiveValues.perspective,
         }}
@@ -195,26 +196,18 @@ const LayeredCards = () => {
         </div>
       </div>
 
-      {/* Floating particles - Responsive count */}
-      {Array.from({ length: isMobile ? 10 : 20 }).map((_, i) => (
-        <div
-          key={i}
-          className="absolute w-1 h-1 bg-white/20 rounded-full animate-pulse"
-          style={{
-            left: Math.random() * windowSize.width,
-            top: Math.random() * windowSize.height,
-            animationDelay: `${Math.random() * 3}s`,
-            animationDuration: `${3 + Math.random() * 4}s`,
-          }}
-        />
-      ))}
+      {/* See More Button */}
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30">
+        <Link to="/events">
+          <button className="px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 font-quicksand
+                            rounded-full text-white font-semibold uppercase tracking-wider 
+                            hover:bg-white/30 hover:scale-105 transition-all duration-300">
+            See More →
+          </button>
+        </Link>
+      </div>
 
-      {/* Instructions overlay for mobile */}
-      {isMobile && (
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-lg p-3 text-white text-sm text-center max-w-xs">
-          Tap cards to open registration links
-        </div>
-      )}
+
     </div>
   );
 };
