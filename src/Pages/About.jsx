@@ -31,7 +31,7 @@ export default function About() {
 
           {/* Right Side: Text */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-heading text-white mb-4 text-center">
+            <h2 className="text-3xl text-white mb-4 text-center font-giaza uppercase">
               <span className="text-white">THE LEGACY CONTINUES</span>
             </h2>
             <p className="text-white leading-relaxed text-left">

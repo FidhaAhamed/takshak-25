@@ -100,20 +100,22 @@ const LayeredCards = () => {
 
   return (
     <div
-    className="relative w-full h-screen overflow-hidden bg-black"
-    style={{
-      backgroundImage: "url('/assets/bg7.jpg')", 
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}
-  >
-      <h1 className="absolute top-6 left-1/2 -translate-x-1/2 text-4xl md:text-5xl font-extrabold tracking-wider text-white drop-shadow-lg z-20">
+      className="relative w-full h-screen overflow-hidden bg-black"
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transform -scale-x-100"
+        style={{ backgroundImage: "url('/assets/bg7.jpg')" }}
+      ></div>
+
+      {/* Dark overlay for readability (optional) */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      <h1 className="absolute top-6 left-1/2 -translate-x-1/2 text-4xl md:text-5xl font-giaza font-extrabold uppercase tracking-wider text-white drop-shadow-lg z-20">
         Events
       </h1>
 
       {/* Main 3D container - Properly centered */}
       <div 
-        className="absolute inset-0 flex items-center justify-center"
+        className="my-16 absolute inset-0 flex items-center justify-center"
         style={{
           perspective: responsiveValues.perspective,
         }}
