@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 
 @font-face {
   font-family: 'Giaza';
@@ -23,7 +22,7 @@
   src: url('/fonts/BusterRegular-YzGoo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-=======
+}
 /* Ensure the background covers the entire viewport */
 html, body, #root {
   min-height: 100%;
@@ -38,5 +37,4 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
->>>>>>> 345b53c8ada844aa2443573822b1d5809615f831
 }
