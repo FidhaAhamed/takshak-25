@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure the background covers the entire viewport */
+html, body, #root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
