@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       className="w-full py-10 px-6 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/assets/bg1.jpg')" }}
+      style={{ backgroundImage: "url('/assets/bg6 - Copy.jpg')" }}
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
         
