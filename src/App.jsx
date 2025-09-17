@@ -5,12 +5,11 @@ import Hero from './Pages/Hero';
 import About from './Pages/About';
 import Events from './Pages/Events';
 import Footer from './Pages/Footer';
-import EventsPage from './Pages/eventspage';
+// Import EventsPage only if you plan to use it
+// import EventsPage from './Pages/eventspage';
 
 function App() {
-
   useEffect(() => {
-    
     document.documentElement.classList.add('bg-fixed', 'bg-cover', 'bg-center');
     document.documentElement.style.backgroundImage = 'url(/assets/bg7.jpg)';
     
@@ -35,8 +34,21 @@ function App() {
         }
       />
 
-      {/* Events page */}
-      {/*<Route path="/events" element={<EventsPage />} />*/}
+      {/* Uncomment this when you're ready to use the EventsPage */}
+      {/* <Route path="/events" element={<EventsPage />} /> */}
+      
+      {/* Catch-all route for undefined paths */}
+      <Route 
+        path="*" 
+        element={
+          <div className="min-h-screen flex flex-col">
+            <Hero bgImage="/assets/bg7.jpg"/>
+            <About />
+            <Events />
+            <Footer />
+          </div>
+        }
+      />
     </Routes>
   );
 }
