@@ -5,7 +5,7 @@ import Hero from './Pages/Hero';
 import About from './Pages/About';
 import Events from './Pages/Events';
 import Footer from './Pages/Footer';
-import EventsPage from './Pages/Eventspage';
+import EventsPage from './Pages/eventspage';
 
 function App() {
 
