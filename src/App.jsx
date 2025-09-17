@@ -36,7 +36,7 @@ function App() {
       />
 
       {/* Events page */}
-      <Route path="/events" element={<EventsPage />} />
+      {/*<Route path="/events" element={<EventsPage />} />*/}
     </Routes>
   );
 }
