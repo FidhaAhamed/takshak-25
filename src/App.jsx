@@ -1,48 +1,55 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import './index.css';
-import Hero from './Pages/Hero';
-import About from './Pages/About';
-import Events from './Pages/Events';
-import Footer from './Pages/Footer';
-// Import EventsPage only if you plan to use it
-// import EventsPage from './Pages/eventspage';
+import "./index.css";
+import Loader from "./components/Loader";
+import Hero from "./Pages/Hero";
+import About from "./Pages/About";
+import Events from "./Pages/Events";
+import Footer from "./Pages/Footer";
 
-function App() {
+export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  // Loader lasts for full animation cycle (≈6s spin + 0.5s fade)
   useEffect(() => {
-    document.documentElement.classList.add('bg-fixed', 'bg-cover', 'bg-center');
-    document.documentElement.style.backgroundImage = 'url(/assets/bg7.jpg)';
-    
+    const timer = setTimeout(() => setLoading(false), 6500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Apply background image globally
+  useEffect(() => {
+    document.documentElement.classList.add("bg-fixed", "bg-cover", "bg-center");
+    document.documentElement.style.backgroundImage = "url(/assets/bg7.jpg)";
     return () => {
-      document.documentElement.classList.remove('bg-fixed', 'bg-cover', 'bg-center');
-      document.documentElement.style.backgroundImage = '';
+      document.documentElement.classList.remove(
+        "bg-fixed",
+        "bg-cover",
+        "bg-center"
+      );
+      document.documentElement.style.backgroundImage = "";
     };
   }, []);
 
+  if (loading) return <Loader />;
+
   return (
     <Routes>
-      {/* Home route */}
       <Route
         path="/"
         element={
           <div className="min-h-screen flex flex-col">
-            <Hero bgImage="/assets/bg7.jpg"/>
+            <Hero bgImage="/assets/bg7.jpg" />
             <About />
             <Events />
             <Footer />
           </div>
         }
       />
-
-      {/* Uncomment this when you're ready to use the EventsPage */}
-      {/* <Route path="/events" element={<EventsPage />} /> */}
-      
-      {/* Catch-all route for undefined paths */}
-      <Route 
-        path="*" 
+      <Route
+        path="*"
         element={
           <div className="min-h-screen flex flex-col">
-            <Hero bgImage="/assets/bg7.jpg"/>
+            <Hero bgImage="/assets/bg7.jpg" />
             <About />
             <Events />
             <Footer />
@@ -52,8 +59,6 @@ function App() {
     </Routes>
   );
 }
-
-export default App;
 
 
 

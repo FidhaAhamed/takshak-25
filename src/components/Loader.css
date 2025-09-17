@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Font */
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* --- Only horizontal slide for video --- */
+@keyframes slide-only {
+  0% {
+    transform: translate3d(-50vw, -50%, 0);
+  }
+  100% {
+    transform: translate3d(50vw, -50%, 0);
+  }
+}
+
+/* --- Text reveal effect (unchanged) --- */
+@keyframes reveal-text-in-path {
+  0%, 20% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  80% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* Utility-like classes */
+.animate-slide-only {
+  animation: slide-only 6s linear forwards;
+}
+
+.animate-reveal-text-in-path {
+  animation: reveal-text-in-path 6s linear forwards;
+}
