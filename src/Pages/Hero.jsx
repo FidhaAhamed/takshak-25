@@ -19,7 +19,7 @@ export default function Hero({ bgImage }) {
 
       {/* Floating Logo (click to zoom away) */}
       <div
-        className={`mb-6 relative z-20 cursor-pointer transition-transform transition-opacity duration-[1500ms] ease-in-out ${
+        className={`mb-6 relative z-20 cursor-pointer transition-transform transition-opacity duration-[1500ms] ease-in-out${
           zoomed
             ? "scale-[3] opacity-0 pointer-events-none"
             : "animate-float opacity-100"
@@ -29,16 +29,16 @@ export default function Hero({ bgImage }) {
         <img
           src="/assets/logo.png"
           alt="Takshak Logo"
-          className="w-56 h-56 object-contain drop-shadow-[0_0_20px_rgba(255,80,80,0.6)] hover:scale-110 hover:rotate-3 transition-transform duration-500"
+          className="w-56 h-56 object-contain hover:scale-110 hover:rotate-3 transition-transform duration-500"
         />
       </div>
 
       {/* Heading */}
       <h1
-        className={`relative z-20 text-6xl md:text-8xl font-bold text-white tracking-widest transition-all duration-1000 ${
+        className={`relative z-20 text-5xl md:text-8xl font-bold text-white tracking-widest transition-all duration-1000 text-center ${
           zoomed
             ? "opacity-100 scale-105"
-            : "opacity-100 animate-float hover:scale-110 hover:text-rose-400 hover:drop-shadow-[0_0_25px_rgba(255,120,120,0.8)]"
+            : "opacity-100 hover:scale-110  "
         }`}
       >
         TAKSHAK' <span className="text-rose-400">25</span>

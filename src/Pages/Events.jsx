@@ -101,7 +101,7 @@ const LayeredCards = () => {
 
   return (
     <div
-      className="relative w-full min-h-[130vh] overflow-hidden bg-black"
+      className="relative w-full min-h-[80vh] md:min-h-[130vh] overflow-hidden bg-black"
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform -scale-x-100"
@@ -197,15 +197,15 @@ const LayeredCards = () => {
       </div>
 
       {/* See More Button */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30">
+      {/*<div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30">
         <Link to="/events">
           <button className="px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 font-quicksand
                             rounded-full text-white font-semibold uppercase tracking-wider 
-                            hover:bg-white/30 hover:scale-105 transition-all duration-300">
+                            hover:bg-white/20 hover:scale-105 transition-all duration-300">
             See More →
           </button>
         </Link>
-      </div>
+      </div>*/}
 
 
     </div>
