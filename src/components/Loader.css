@@ -5,6 +5,17 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+.loader-video {
+  height: 250px;  
+}
+
+@media (max-width: 640px) {  
+  .loader-video {
+    height: 150px;   
+  }
+}
+
+
 /* --- Only horizontal slide for video --- */
 @keyframes slide-only {
   0% {
