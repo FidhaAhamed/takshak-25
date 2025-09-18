@@ -14,35 +14,38 @@ export const competitions = [
     link: "https://makemypass.com/event/innovista",
   },
   {
-    poster: "/assets/events/e4.jpg",
-    link: "https://makemypass.com/event/ragworkshop",
+    poster: "/assets/events/e7.jpg",
+    link: "https://makemypass.com/event/visionedge-paper-presentation",
   },
   {
-    poster: "/assets/events/e5.jpg",
-    link: "https://makemypass.com/event/animate-the-basics",
-  },
+    poster: "/assets/events/e10.jpg",
+    link: "https://makemypass.com/event/brain2gain",
+  }
 
 ];
 
 export const workshops = [
   {
-    poster: "/assets/events/e6.jpg",
-    link: "https://makemypass.com/event/macekart-iedc-mace",
-  },
-  {
-    poster: "/assets/events/e7.jpg",
-    link: "https://makemypass.com/event/visionedge-paper-presentation",
+    poster: "/assets/events/e5.jpg",
+    link: "https://makemypass.com/event/animate-the-basics",
   },
   {
     poster: "/assets/events/e8.jpg",
     link: "https://makemypass.com/event/game-development-workshop",
   },
   {
-    poster: "/assets/events/e9.jpg",
-    link: "https://makemypass.com/event/autocad-1",
+    poster: "/assets/events/e4.jpg",
+    link: "https://makemypass.com/event/ragworkshop",
   },
   {
-    poster: "/assets/events/e10.jpg",
-    link: "https://makemypass.com/event/brain2gain",
+    poster: "/assets/events/e9.jpg",
+    link: "https://makemypass.com/event/autocad-1",
   }
+];
+
+export const otherEvents = [
+  {
+    poster: "/assets/events/e6.jpg",
+    link: "https://makemypass.com/event/macekart-iedc-mace",
+  },
 ];
