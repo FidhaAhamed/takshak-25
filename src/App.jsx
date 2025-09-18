@@ -1,22 +1,31 @@
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom"; // 👈 add useLocation
 import "./index.css";
 import Loader from "./components/Loader";
 import Hero from "./Pages/Hero";
 import About from "./Pages/About";
 import Events from "./Pages/Events";
 import Footer from "./Pages/Footer";
+import EventsPage from "./Pages/EventsPage";
+
+function ScrollToTopInline() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" }); // or "smooth"
+  }, [pathname]);
+
+  return null;
+}
 
 export default function App() {
   const [loading, setLoading] = useState(true);
 
-  // Loader lasts for full animation cycle (≈6s spin + 0.5s fade)
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 6500);
     return () => clearTimeout(timer);
   }, []);
 
-  // Apply background image globally
   useEffect(() => {
     document.documentElement.classList.add("bg-fixed", "bg-cover", "bg-center");
     document.documentElement.style.backgroundImage = "url(/assets/bg7.jpg)";
@@ -33,36 +42,44 @@ export default function App() {
   if (loading) return <Loader />;
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <div className="min-h-screen flex flex-col">
-            <Hero bgImage="/assets/bg7.jpg" />
-            <About />
-            <Events />
-            <Footer />
-          </div>
-        }
-      />
-      <Route
-        path="*"
-        element={
-          <div className="min-h-screen flex flex-col">
-            <Hero bgImage="/assets/bg7.jpg" />
-            <About />
-            <Events />
-            <Footer />
-          </div>
-        }
-      />
-    </Routes>
+    <>
+      <ScrollToTopInline /> {/* 👈 inline scroll reset */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="min-h-screen flex flex-col">
+              <Hero bgImage="/assets/bg7.jpg" />
+              <About />
+              <Events />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <div className="min-h-screen flex flex-col">
+              <EventsPage />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <div className="min-h-screen flex flex-col">
+              <Hero bgImage="/assets/bg7.jpg" />
+              <About />
+              <Events />
+              <Footer />
+            </div>
+          }
+        />
+      </Routes>
+    </>
   );
 }
-
-
-
-
 
 
 

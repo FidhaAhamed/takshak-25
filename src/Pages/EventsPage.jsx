@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { competitions, workshops } from "../data/eventsData";
+import { competitions, workshops, otherEvents } from "../data/eventsData";
 
 export default function EventsPage() {
   const renderCards = (events) =>
@@ -36,13 +36,13 @@ export default function EventsPage() {
       <div className="absolute 0" />
 
       {/* Title */}
-      <h1 className="text-5xl font-bold mt-12 mb-8 tracking-wide z-10">
+      <h1 className="text-4xl md:text-6xl font-extrabold font-giaza uppercase text-center mt-16 mb-10 tracking-tight text-white drop-shadow-lg z-10">
         Our <span className="text-rose-500">Events</span>
       </h1>
 
       {/* Competitions */}
       <div className="w-full max-w-6xl px-6 mb-16 z-10">
-        <h2 className="text-3xl font-semibold mb-6">Competitions</h2>
+        <h2 className="font-bebas text-5xl uppercase tracking-wide">Competitions</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {renderCards(competitions)}
         </div>
@@ -50,9 +50,17 @@ export default function EventsPage() {
 
       {/* Workshops */}
       <div className="w-full max-w-6xl px-6 mb-16 z-10">
-        <h2 className="text-3xl font-semibold mb-6">Workshops</h2>
+        <h2 className="font-bebas text-5xl uppercase tracking-wide">Workshops</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {renderCards(workshops)}
+        </div>
+      </div>
+
+      {/* Other Events */}
+      <div className="w-full max-w-6xl px-6 mb-16 z-10">
+        <h2 className="font-bebas text-5xl uppercase tracking-wide">Other Events</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {renderCards(otherEvents)}
         </div>
       </div>
     </section>

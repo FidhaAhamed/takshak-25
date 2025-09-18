@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const cardsData = [
   { id: 1, imageUrl: "/assets/events/e1.jpg", registrationLink: "https://makemypass.com/event/bgmi-tournament" },
-  { id: 2, imageUrl: "/assets/events/e2.jpg", registrationLink: "ttps://forms.gle/EPQTKZwr9MkGc2eLA" },
+  { id: 2, imageUrl: "/assets/events/e2.jpg", registrationLink: "https://forms.gle/EPQTKZwr9MkGc2eLA" },
   { id: 3, imageUrl: "/assets/events/e3.jpg", registrationLink: "https://makemypass.com/event/innovista" },
   { id: 4, imageUrl: "/assets/events/e4.jpg", registrationLink: "https://makemypass.com/event/ragworkshop" },
   { id: 5, imageUrl: "/assets/events/e5.jpg", registrationLink: "https://makemypass.com/event/animate-the-basics" },
@@ -196,8 +196,8 @@ const LayeredCards = () => {
         </div>
       </div>
 
-      {/* See More Button */}
-      {/*<div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30">
+      See More Button
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30">
         <Link to="/events">
           <button className="px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 font-quicksand
                             rounded-full text-white font-semibold uppercase tracking-wider 
@@ -205,7 +205,7 @@ const LayeredCards = () => {
             See More →
           </button>
         </Link>
-      </div>*/}
+      </div>
 
 
     </div>

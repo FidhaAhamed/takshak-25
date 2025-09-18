@@ -2,47 +2,50 @@
 
 export const competitions = [
   {
-    poster: "/assets/posters/comp1.jpg",
-    link: "https://external-site.com/competition1",
+    poster: "/assets/events/e1.jpg",
+    link: "https://makemypass.com/event/bgmi-tournament",
   },
   {
-    poster: "/assets/posters/comp2.jpg",
-    link: "https://external-site.com/competition2",
+    poster: "/assets/events/e2.jpg",
+    link: "https://forms.gle/EPQTKZwr9MkGc2eLA",
   },
   {
-    poster: "/assets/posters/comp3.jpg",
-    link: "https://external-site.com/competition3",
+    poster: "/assets/events/e3.jpg",
+    link: "https://makemypass.com/event/innovista",
   },
   {
-    poster: "/assets/posters/comp4.jpg",
-    link: "https://external-site.com/competition4",
+    poster: "/assets/events/e7.jpg",
+    link: "https://makemypass.com/event/visionedge-paper-presentation",
   },
   {
-    poster: "/assets/posters/comp5.jpg",
-    link: "https://external-site.com/competition5",
-  },
+    poster: "/assets/events/e10.jpg",
+    link: "https://makemypass.com/event/brain2gain",
+  }
 
 ];
 
 export const workshops = [
   {
-    poster: "/assets/posters/work1.jpg",
-    link: "https://external-site.com/workshop1",
+    poster: "/assets/events/e5.jpg",
+    link: "https://makemypass.com/event/animate-the-basics",
   },
   {
-    poster: "/assets/posters/work2.jpg",
-    link: "https://external-site.com/workshop2",
+    poster: "/assets/events/e8.jpg",
+    link: "https://makemypass.com/event/game-development-workshop",
   },
   {
-    poster: "/assets/posters/work3.jpg",
-    link: "https://external-site.com/workshop3",
+    poster: "/assets/events/e4.jpg",
+    link: "https://makemypass.com/event/ragworkshop",
   },
   {
-    poster: "/assets/posters/work4.jpg",
-    link: "https://external-site.com/workshop4",
-  },
-  {
-    poster: "/assets/posters/work5.jpg",
-    link: "https://external-site.com/workshop5",
+    poster: "/assets/events/e9.jpg",
+    link: "https://makemypass.com/event/autocad-1",
   }
+];
+
+export const otherEvents = [
+  {
+    poster: "/assets/events/e6.jpg",
+    link: "https://makemypass.com/event/macekart-iedc-mace",
+  },
 ];
