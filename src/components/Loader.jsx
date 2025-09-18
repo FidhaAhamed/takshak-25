@@ -11,7 +11,7 @@ export default function Loader() {
         loop
         muted
         playsInline
-        className="absolute top-1/2 z-20 h-[250px] will-change-transform animate-slide-only"
+        className="absolute top-1/2 z-20 will-change-transform animate-slide-only loader-video"
         style={{ transformOrigin: "center" }}
       />
 
