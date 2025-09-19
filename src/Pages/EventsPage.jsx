@@ -19,7 +19,7 @@ export default function EventsPage() {
         <img
           src={event.poster}
           alt={`Event ${index + 1}`}
-          className="w-full h-64 object-cover"
+          className="w-full object-contain"
         />
       </motion.a>
     ));
