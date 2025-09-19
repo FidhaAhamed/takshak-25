@@ -5,18 +5,18 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+/* --- Video size --- */
 .loader-video {
-  height: 250px;  
+  height: 250px;
 }
 
-@media (max-width: 640px) {  
+@media (max-width: 640px) {
   .loader-video {
-    height: 150px;   
+    height: 150px;
   }
 }
 
-
-/* --- Only horizontal slide for video --- */
+/* --- Horizontal slide for video --- */
 @keyframes slide-only {
   0% {
     transform: translate3d(-50vw, -50%, 0);
@@ -26,9 +26,10 @@
   }
 }
 
-/* --- Text reveal effect (unchanged) --- */
+/* --- Text reveal effect --- */
 @keyframes reveal-text-in-path {
-  0%, 20% {
+  0%,
+  20% {
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   }
   80% {
@@ -39,11 +40,20 @@
   }
 }
 
-/* Utility-like classes */
+/* --- Animation duration desktop --- */
 .animate-slide-only {
-  animation: slide-only 6s linear forwards;
+  animation: slide-only 4s linear forwards;
+}
+.animate-reveal-text-in-path {
+  animation: reveal-text-in-path 4s linear forwards;
 }
 
-.animate-reveal-text-in-path {
-  animation: reveal-text-in-path 6s linear forwards;
+/* --- Shorter animations for phones --- */
+@media (max-width: 640px) {
+  .animate-slide-only {
+    animation-duration: 2s;
+  }
+  .animate-reveal-text-in-path {
+    animation-duration: 2s;
+  }
 }
