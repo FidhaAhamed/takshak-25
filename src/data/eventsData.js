@@ -20,6 +20,26 @@ export const competitions = [
   {
     poster: "/assets/events/e10.jpg",
     link: "https://makemypass.com/event/brain2gain",
+  },
+  {
+    poster: "/assets/events/e11.jpg",
+    link: "https://makemypass.com/event/techtriad",
+  },
+  {
+    poster: "/assets/events/e12.jpg",
+    link: "https://makemypass.com/event/loop-z-coding-competition",
+  },
+  {
+    poster: "/assets/events/e13.jpg",
+    link: "https://forms.gle/7fJR5iqRiFmMcmwC6",
+  },
+  {
+    poster: "/assets/events/e16.jpg",
+    link: "https://makemypass.com/event/t-clash",
+  },
+  {
+    poster: "/assets/events/e18.jpg",
+    link: "https://makemypass.com/event/click-and-fix",
   }
 
 ];
@@ -40,6 +60,26 @@ export const workshops = [
   {
     poster: "/assets/events/e9.jpg",
     link: "https://makemypass.com/event/autocad-1",
+  },
+  {
+    poster: "/assets/events/e14.jpg",
+    link: " https://makemypass.com/event/marketing-ioi",
+  },
+  {
+    poster: "/assets/events/e15.jpg",
+    link: "https://makemypass.com/event/decode-the-pc",
+  },
+  {
+    poster: "/assets/events/e17.jpg",
+    link: "https://makemypass.com/event/robotics-workshop",
+  },
+  {
+    poster: "/assets/events/e19.jpg",
+    link: "https://makemypass.com/event/telescope-workshop",
+  },
+  {
+    poster: "/assets/events/e20.jpg",
+    link: "https://makemypass.com/event/matlab-workshop",
   }
 ];
 

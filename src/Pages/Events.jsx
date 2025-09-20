@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const cardsData = [
-  { id: 1, imageUrl: "/assets/events/e1.jpg", registrationLink: "https://makemypass.com/event/bgmi-tournament" },
+  { id: 1, imageUrl: "/assets/events/e16.jpg", registrationLink: "https://makemypass.com/event/t-clash" },
   { id: 2, imageUrl: "/assets/events/e2.jpg", registrationLink: "https://forms.gle/EPQTKZwr9MkGc2eLA" },
   { id: 3, imageUrl: "/assets/events/e3.jpg", registrationLink: "https://makemypass.com/event/innovista" },
   { id: 4, imageUrl: "/assets/events/e4.jpg", registrationLink: "https://makemypass.com/event/ragworkshop" },
-  { id: 5, imageUrl: "/assets/events/e5.jpg", registrationLink: "https://makemypass.com/event/animate-the-basics" },
+  { id: 5, imageUrl: "/assets/events/e17.jpg", registrationLink: "https://makemypass.com/event/robotics-workshop" },
   { id: 6, imageUrl: "/assets/events/e6.jpg", registrationLink: "https://makemypass.com/event/macekart-iedc-mace" },
   { id: 7, imageUrl: "/assets/events/e7.jpg", registrationLink: "https://makemypass.com/event/visionedge-paper-presentation" },
-  { id: 8, imageUrl: "/assets/events/e8.jpg", registrationLink: "https://makemypass.com/event/game-development-workshop" },
-  { id: 9, imageUrl: "/assets/events/e9.jpg", registrationLink: "https://makemypass.com/event/autocad-1" },
+  { id: 8, imageUrl: "/assets/events/e15.jpg", registrationLink: "https://makemypass.com/event/decode-the-pc" },
+  { id: 9, imageUrl: "/assets/events/e14.jpg", registrationLink: "https://makemypass.com/event/marketing-ioi" },
   { id: 10, imageUrl: "/assets/events/e10.jpg", registrationLink: "https://makemypass.com/event/brain2gain" },
 ];
 
