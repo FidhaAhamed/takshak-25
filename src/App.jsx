@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom"; // 👈 add useLocation
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./index.css";
 import Loader from "./components/Loader";
 import Hero from "./Pages/Hero";
@@ -12,7 +12,7 @@ function ScrollToTopInline() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" }); // or "smooth"
+    window.scrollTo({ top: 0, behavior: "instant" }); 
   }, [pathname]);
 
   return null;
@@ -22,7 +22,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 6500);
+    const isMobile = window.innerWidth <= 640; 
+    const duration = isMobile ? 2000 : 4000;
+    const timer = setTimeout(() => setLoading(false), duration);
     return () => clearTimeout(timer);
   }, []);
 
@@ -43,7 +45,7 @@ export default function App() {
 
   return (
     <>
-      <ScrollToTopInline /> {/* 👈 inline scroll reset */}
+      <ScrollToTopInline />
       <Routes>
         <Route
           path="/"
@@ -80,7 +82,6 @@ export default function App() {
     </>
   );
 }
-
 
 
 
