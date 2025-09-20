@@ -40,6 +40,11 @@ export const competitions = [
   {
     poster: "/assets/events/e18.jpg",
     link: "https://makemypass.com/event/click-and-fix",
+  },
+
+  {
+    poster: "/assets/events/e21.jpg",
+    link: "https://makemypass.com/event/tech-arena",
   }
 
 ];
@@ -80,6 +85,10 @@ export const workshops = [
   {
     poster: "/assets/events/e20.jpg",
     link: "https://makemypass.com/event/matlab-workshop",
+  },
+  {
+    poster: "/assets/events/e22.jpg",
+    link: "https://makemypass.com/event/the-startup-spark",
   }
 ];
 
