@@ -6,6 +6,14 @@ export const competitions = [
     link: "https://hacktilldawn-website.vercel.app/",
   },
   {
+    poster: "/assets/events/e16.jpg",
+    link: "https://makemypass.com/event/t-clash",
+  },
+  {
+    poster: "/assets/events/e24.jpg",
+    link: "https://makemypass.com/event/designix-web-desigining-with-ai",
+  },
+  {
     poster: "/assets/events/e1.jpg",
     link: "https://makemypass.com/event/bgmi-tournament",
   },
@@ -37,10 +45,7 @@ export const competitions = [
     poster: "/assets/events/e13.jpg",
     link: "https://forms.gle/7fJR5iqRiFmMcmwC6",
   },
-  {
-    poster: "/assets/events/e16.jpg",
-    link: "https://makemypass.com/event/t-clash",
-  },
+  
   {
     poster: "/assets/events/e18.jpg",
     link: "https://makemypass.com/event/click-and-fix",
