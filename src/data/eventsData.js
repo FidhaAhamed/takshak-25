@@ -2,6 +2,10 @@
 
 export const competitions = [
   {
+    poster: "/assets/events/e23.jpg",
+    link: "https://hacktilldawn-website.vercel.app/",
+  },
+  {
     poster: "/assets/events/e1.jpg",
     link: "https://makemypass.com/event/bgmi-tournament",
   },
