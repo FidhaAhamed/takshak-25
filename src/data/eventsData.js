@@ -2,6 +2,33 @@
 
 export const competitions = [
   {
+    poster: "/assets/events/e34.jpg",
+    link: "https://makemypass.com/event/mini-militia-tournament",
+  },
+  {
+    poster: "/assets/events/e32.jpg",
+    link: "https://makemypass.com/event/sae-ideathon",
+  },
+  {
+    poster: "/assets/events/e30.jpg",
+    link: "https://makemypass.com/event/digital-painting-competition",
+  },
+  {
+    poster: "/assets/events/e29.jpg",
+    link: "https://makemypass.com/event/wiring-competition",
+  },
+  {
+    poster: "/assets/events/e28.jpg",
+    link: "https://makemypass.com/event/edit-a-thon",
+  },
+  {
+    poster: "/assets/events/e27.jpg",
+    link: "https://makemypass.com/event/design-competition",
+  },
+  {
+    poster: "/assets/events/e25.jpg",
+  },
+  {
     poster: "/assets/events/e23.jpg",
     link: "https://hacktilldawn-website.vercel.app/",
   },
@@ -55,6 +82,22 @@ export const competitions = [
 
 export const workshops = [
   {
+    poster: "/assets/events/e35.jpg",
+    link: "https://makemypass.com/event/workshop-on-ev",
+  },
+  {
+    poster: "/assets/events/e31.jpg",
+    link: "https://makemypass.com/event/polish-your-story-film-editing-workshop",
+  },
+  {
+    poster: "/assets/events/e26.jpg",
+    link: "https://makemypass.com/event/mep-career-accelerator",
+  },
+  {
+    poster: "/assets/events/e24.jpg",
+    link: "https://forms.gle/CLjGBZFP5XSRUmtv6",
+  },
+  {
     poster: "/assets/events/e5.jpg",
     link: "https://makemypass.com/event/animate-the-basics",
   },
@@ -97,6 +140,9 @@ export const workshops = [
 ];
 
 export const otherEvents = [
+  {
+    poster: "/assets/events/e33.jpg",
+  },
   {
     poster: "/assets/events/e6.jpg",
     link: "https://makemypass.com/event/macekart-iedc-mace",
