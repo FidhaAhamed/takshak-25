@@ -1,6 +1,36 @@
 // src/data/eventsData.js
 
+import { link } from "framer-motion/client";
+
 export const competitions = [
+  {
+    poster: "/assets/events/e50.jpg",
+    link: "https://makemypass.com/event/promptpixels",
+  },
+  {
+    poster: "/assets/events/e49.jpg",
+    link: "https://makemypass.com/event/designix-web-desigining-with-ai",
+  },
+  {
+    poster: "/assets/events/e48.jpg",
+    link: "https://forms.gle/LsF6ADUDKQoEuU5BA",
+  },
+  {
+    poster: "/assets/events/e46.jpg",
+    link: "https://makemypass.com/event/mr-entrepreneur",
+  },
+  {
+    poster: "/assets/events/e44.jpg",
+    link: "https://app.makemypass.com/event/treasure-hunt-1",
+  },
+  {
+    poster: "/assets/events/e37.jpg",
+    link: "https://makemypass.com/event/monoclone-1",
+  },
+  {
+    poster: "/assets/events/e36.jpg",
+    link: "https://forms.gle/deKjUq73AJHDF2Ay9",
+  },
   {
     poster: "/assets/events/e34.jpg",
     link: "https://makemypass.com/event/mini-militia-tournament",
@@ -87,8 +117,40 @@ export const competitions = [
 
 export const workshops = [
   {
+    poster: "/assets/events/e53.jpg",
+    link: "https://makemypass.com/event/circuit-designing-workshop",
+  },
+  {
+    poster: "/assets/events/e45.jpg",
+    link: "https://makemypass.com/event/arduino-101",
+  },
+  {
+    poster: "/assets/events/e43.jpg",
+    link: "https://makemypass.com/event/hands-on-workshop-custom-pcb-building-industry-software-intro-soldering-circuit-management-for-college-projects",
+  },
+  {
+    poster: "/assets/events/e41.jpg",
+    link: "https://forms.gle/TfRSWEeGf829PyDt5*",
+  },
+  {
+    poster: "/assets/events/e40.jpg",
+    link: "https://makemypass.com/event/stirrups-and-stories",
+  },
+  {
+    poster: "/assets/events/e39.jpg",
+    link: "https://makemypass.com/event/embedded-systems-workshop",
+  },
+  {
+    poster: "/assets/events/e38.jpg",
+    link: "https://makemypass.com/event/fundementals-of-vlsi",
+  },
+  {
     poster: "/assets/events/e35.jpg",
     link: "https://makemypass.com/event/workshop-on-ev",
+  },
+  {
+    poster: "/assets/events/e52.jpg",
+    link: "https://makemypass.com/event/getting-started-with-hackathon",
   },
   {
     poster: "/assets/events/e31.jpg",
@@ -107,6 +169,9 @@ export const workshops = [
     link: "https://makemypass.com/event/animate-the-basics",
   },
   {
+    poster: "/assets/events/e51.jpg",
+  },
+  {
     poster: "/assets/events/e8.jpg",
     link: "https://makemypass.com/event/game-development-workshop",
   },
@@ -117,6 +182,10 @@ export const workshops = [
   {
     poster: "/assets/events/e9.jpg",
     link: "https://makemypass.com/event/autocad-1",
+  },
+  {
+    poster: "/assets/events/e54.jpg",
+    link: "https://makemypass.com/event/cipherx?utm_source=Lenient%20Tree",
   },
   {
     poster: "/assets/events/e14.jpg",
@@ -145,6 +214,12 @@ export const workshops = [
 ];
 
 export const otherEvents = [
+  {
+    poster: "/assets/events/e47.jpg",
+  },
+  {
+    poster: "/assets/events/e42.jpg",
+  },
   {
     poster: "/assets/events/e33.jpg",
   },
