@@ -4,6 +4,18 @@ import { link } from "framer-motion/client";
 
 export const competitions = [
   {
+    poster: "/assets/events/e69.jpg",
+    link: "https://forms.gle/8JqwEX2RtiryapUn7",
+  },
+  {
+    poster: "/assets/events/e70.jpg",
+    link: "https://makemypass.com/event/code-2-cash",
+  },
+  {
+    poster: "/assets/events/e71.jpg",
+    link: "https://forms.gle/DRSZFgBPG5DMxpcJ8",
+  },
+  {
     poster: "/assets/events/e56.jpg",
     link: "https://app.makemypass.com/event/build-a-bot",
   },
