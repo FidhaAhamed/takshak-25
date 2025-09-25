@@ -4,6 +4,18 @@ import { link } from "framer-motion/client";
 
 export const competitions = [
   {
+    poster: "/assets/events/e56.jpg",
+    link: "https://app.makemypass.com/event/build-a-bot",
+  },
+  {
+    poster: "/assets/events/e55.jpg",
+    link: "https://makemypass.com/event/tech-traverse",
+  },
+  {
+    poster: "/assets/events/e59.jpg",
+    link: "https://forms.gle/1jgcj1jAYeLQBKcE6",
+  },
+  {
     poster: "/assets/events/e50.jpg",
     link: "https://makemypass.com/event/promptpixels",
   },
@@ -102,12 +114,14 @@ export const competitions = [
     poster: "/assets/events/e13.jpg",
     link: "https://forms.gle/7fJR5iqRiFmMcmwC6",
   },
-  
+  {
+    poster: "/assets/events/e67.jpg",
+    link: "https://makemypass.com/event/science-and-tech-quiz-competition",
+  },
   {
     poster: "/assets/events/e18.jpg",
     link: "https://makemypass.com/event/click-and-fix",
   },
-
   {
     poster: "/assets/events/e21.jpg",
     link: "https://makemypass.com/event/tech-arena",
@@ -172,6 +186,9 @@ export const workshops = [
     poster: "/assets/events/e51.jpg",
   },
   {
+    poster: "/assets/events/e60.jpg",
+  },
+  {
     poster: "/assets/events/e8.jpg",
     link: "https://makemypass.com/event/game-development-workshop",
   },
@@ -188,6 +205,10 @@ export const workshops = [
     link: "https://makemypass.com/event/cipherx?utm_source=Lenient%20Tree",
   },
   {
+    poster: "/assets/events/e61.jpg",
+    link: "https://forms.gle/JF4ydKh75Fy4isjE7",
+  },
+  {
     poster: "/assets/events/e14.jpg",
     link: " https://makemypass.com/event/marketing-ioi",
   },
@@ -198,6 +219,18 @@ export const workshops = [
   {
     poster: "/assets/events/e17.jpg",
     link: "https://makemypass.com/event/robotics-workshop",
+  },
+  {
+    poster: "/assets/events/e68.jpg",
+    link: "https://makemypass.com/event/coins-and-compass",
+  },
+  {
+    poster: "/assets/events/e58.jpg",
+    link: "https://makemypass.com/event/exploring-agentic-ai",
+  },
+  {
+    poster: "/assets/events/e62.jpg",
+    link: "https://makemypass.com/event/explore-the-child-within",
   },
   {
     poster: "/assets/events/e19.jpg",
@@ -215,10 +248,25 @@ export const workshops = [
 
 export const otherEvents = [
   {
+    poster: "/assets/events/e57.jpg",
+  },
+  {
     poster: "/assets/events/e47.jpg",
   },
   {
     poster: "/assets/events/e42.jpg",
+  },
+  {
+    poster: "/assets/events/e66.jpg",
+  },
+  {
+    poster: "/assets/events/e65.jpg",
+  },
+  {
+    poster: "/assets/events/e64.jpg",
+  },
+  {
+    poster: "/assets/events/e63.jpg",
   },
   {
     poster: "/assets/events/e33.jpg",
